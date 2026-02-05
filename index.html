@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Giri | Senior Mobile Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #020617, #020617);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      font-weight: 700;
+    }
+
+    header h1 span { color: var(--accent); }
+
+    header p {
+      color: var(--muted);
+      margin-top: 16px;
+      max-width: 520px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    section { margin-top: 80px; }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .skill {
+      background: #020617;
+      padding: 16px 18px;
+      border-radius: 12px;
+      font-size: 14px;
+      border: 1px solid #1e293b;
+    }
+
+    .projects {
+      display: grid;
+      gap: 24px;
+    }
+
+    .project h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    footer {
+      margin-top: 100px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      header { grid-template-columns: 1fr; }
+      header h1 { font-size: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Abhishek <span>Giri</span></h1>
+        <p>Senior Mobile Application Engineer with 6+ years of experience in Android (Kotlin/Java) and React Native, specializing in secure, scalable, and background-intensive mobile applications.</p>
+      </div>
+      <div class="card">
+        <p><strong>📍 Location:</strong> Delhi NCR</p>
+        <p><strong>📞 Phone:</strong> +91 8563859905</p>
+        <p><strong>✉️ Email:</strong> giriabhishek071995@gmail.com</p>
+        <p><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/in/abhishekgiri07" target="_blank">abhishekgiri07</a></p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Core Skills</h2>
+      <div class="skills">
+        <div class="skill">Android (Kotlin / Java)</div>
+        <div class="skill">React Native (TypeScript)</div>
+        <div class="skill">WorkManager & Foreground Services</div>
+        <div class="skill">BLE Scanning & Background Execution</div>
+        <div class="skill">MVVM & Clean Architecture</div>
+        <div class="skill">Android Security & VPAT Compliance</div>
+        <div class="skill">SSL Pinning & Keystore</div>
+        <div class="skill">Hybrid Native + RN Architecture</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Projects</h2>
+      <div class="projects">
+        <div class="card project">
+          <h3>PBMC Government Mobile App</h3>
+          <p>Hybrid Android + React Native application with secure authentication, background task orchestration, and compliance with government security standards.</p>
+          <p><strong>Tech:</strong> Android, React Native, WorkManager, Secure APIs</p>
+          <p><a href="#" target="_blank">View Screenshots</a></p>
+        </div>
+        <div class="card project">
+          <h3>BLE Background Scanner</h3>
+          <p>Reliable BLE scanning pipeline using AlarmManager → Foreground Service → Headless JS, working even when app is killed or device is locked.</p>
+          <p><strong>Tech:</strong> Kotlin, BLE, Foreground Services</p>
+          <p><a href="#" target="_blank">View Screenshots</a></p>
+        </div>
+        <div class="card project">
+          <h3>Secure Payment Integration</h3>
+          <p>Integrated Paytm POS and payment SDKs with SSL pinning, audit-ready security hardening, and enterprise compliance.</p>
+          <p><strong>Tech:</strong> Android, Paytm SDK, SSL Pinning</p>
+          <p><a href="#" target="_blank">View Screenshots</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Security & Compliance</h2>
+      <div class="card">
+        <ul>
+          <li>OWASP MASVS & Mobile Top 10 mitigation</li>
+          <li>VPAT & accessibility readiness for government apps</li>
+          <li>Android Keystore, encrypted local storage</li>
+          <li>SSL certificate pinning & secure networking</li>
+          <li>Root detection & tamper resistance</li>
+          <li>Audit-ready documentation and security justifications</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Hire Me</h2>
+      <div class="card">
+        <p>I am open to <strong>senior Android / React Native roles</strong>, freelance consulting, and enterprise or government projects.</p>
+        <p>If you need someone who can <strong>own mobile architecture end-to-end</strong>, ensure security compliance, and deliver production-grade apps — let’s talk.</p>
+        <p>
+          📞 <strong>+91 8563859905</strong><br/>
+          ✉️ <strong>giriabhishek071995@gmail.com</strong><br/>
+          🔗 <a href="https://linkedin.com/in/abhishekgiri07" target="_blank">Connect on LinkedIn</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Abhishek Giri · Senior Android & React Native Engineer</p>
+    </footer>
+  </div>
+</body>
+</html>
