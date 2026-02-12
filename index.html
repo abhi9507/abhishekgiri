@@ -1,107 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Giri | Senior Mobile Application Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Giri | Senior Mobile Application Engineer</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --primary:#2563eb;
+  --primary-dark:#1e40af;
+  --accent:#0ea5e9;
+  --bg:#f1f5f9;
+  --card:#ffffff;
+  --text:#0f172a;
+  --muted:#64748b;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+/* ================= HERO ================= */
+.hero{
+  text-align:center;
+  padding:80px 20px 60px;
+  background:linear-gradient(135deg,#1e3a8a,#2563eb,#0ea5e9);
+  color:white;
+}
+
+.hero h1{
+  font-size:48px;
+  font-weight:800;
+  letter-spacing:-1px;
+}
+
+.subtitle{
+  font-size:20px;
+  font-weight:500;
+  margin-top:10px;
+  opacity:.95;
+}
+
+.description{
+  max-width:750px;
+  margin:20px auto 0;
+  font-size:17px;
+  opacity:.95;
+}
+
+.btn-group{
+  margin-top:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 22px;
+  margin:6px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  transition:all .25s ease;
+}
+
+.btn-primary{
+  background:white;
+  color:var(--primary);
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.btn-outline{
+  border:1.5px solid white;
+  color:white;
+}
+
+.btn-outline:hover{
+  background:white;
+  color:var(--primary);
+}
+
+/* ================= SECTIONS ================= */
+.section{
+  margin-top:40px;
+}
+
+.section-title{
+  font-size:30px;
+  font-weight:700;
+  margin-bottom:25px;
+}
+
+/* ================= CARDS ================= */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
+}
+
+.card{
+  background:var(--card);
+  padding:28px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(2,6,23,.05);
+  transition:all .3s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 18px 45px rgba(2,6,23,.12);
+}
+
+.card h3{
+  margin-bottom:10px;
+  font-size:18px;
+}
+
+.card p{
+  color:var(--muted);
+}
+
+/* ================= PROJECTS ================= */
+.project{
+  background:white;
+  padding:28px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(2,6,23,.05);
+  margin-bottom:22px;
+}
+
+.project h3{
+  font-size:20px;
+}
+
+.project p{
+  color:var(--muted);
+  margin:6px 0 12px;
+}
+
+.project ul{
+  padding-left:18px;
+}
+
+.project li{
+  margin-bottom:6px;
+}
+
+/* ================= LIST ================= */
+ul.clean{
+  padding-left:20px;
+}
+
+ul.clean li{
+  margin-bottom:8px;
+}
+
+/* ================= FOOTER ================= */
+.footer{
+  margin-top:80px;
+  padding:70px 20px;
+  text-align:center;
+  background:#0f172a;
+  color:white;
+}
+
+.footer p{
+  color:#cbd5e1;
+  margin-top:10px;
+}
+
+/* ================= ANIMATION ================= */
+.fade-up{
+  animation:fadeUp .7s ease forwards;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+</style>
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <h1>Abhishek Giri</h1>
-            <p>Senior Mobile Application Engineer | Technical Lead</p>
-            <div class="links">
-                <a href="https://www.linkedin.com/in/abhishekgiri07" target="_blank">LinkedIn</a>
-                <a href="https://abhi9507.github.io/abhishekgiri/" target="_blank">Portfolio</a>
-                <a href="mailto:your.email@gmail.com">Email</a>
-            </div>
-        </div>
-    </header>
+<!-- HERO -->
+<section class="hero">
+  <h1 class="fade-up">Abhishek Giri</h1>
+  <div class="subtitle fade-up">Senior Mobile Application Engineer | Technical Lead</div>
 
-    <!-- ABOUT -->
-    <section class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Results-driven Senior Mobile Application Engineer with 6+ years of experience building scalable Android
-                and React Native applications. Strong expertise in architecture design, performance optimization,
-                Bluetooth Low Energy integration, and leading engineering teams to deliver production-grade solutions.
-            </p>
-        </div>
-    </section>
+  <p class="description fade-up">
+    6+ years of experience designing scalable, secure, and high‑performance mobile
+    platforms using Android (Kotlin, Java) and React Native. Specialized in enterprise
+    mobile architecture, BLE integrations, and advanced background execution systems.
+  </p>
 
-    <!-- SKILLS -->
-    <section class="section light">
-        <div class="container">
-            <h2>Core Technical Skills</h2>
-            <div class="skills">
-                <span>Android (Kotlin / Java)</span>
-                <span>React Native</span>
-                <span>TypeScript</span>
-                <span>BLE Integration</span>
-                <span>WorkManager</span>
-                <span>Foreground Services</span>
-                <span>MVVM Architecture</span>
-                <span>REST APIs</span>
-                <span>Firebase</span>
-                <span>Git</span>
-            </div>
-        </div>
-    </section>
+  <div class="btn-group fade-up">
+    <a class="btn btn-primary" href="mailto:giriabhishek071995@gmail.com">Contact Me</a>
+    <a class="btn btn-outline" href="https://www.linkedin.com/in/abhishekgiri07" target="_blank">LinkedIn</a>
+    <a class="btn btn-outline" href="https://abhi9507.github.io/abhishekgiri/" target="_blank">Portfolio</a>
+  </div>
+</section>
 
-    <!-- EXPERIENCE -->
-    <section class="section">
-        <div class="container">
-            <h2>Professional Experience</h2>
+<!-- ABOUT -->
+<section class="container section">
+  <div class="section-title">About Me</div>
+  <p>
+    I am a Technical Lead specializing in Android and React Native architecture for
+    enterprise‑scale mobile systems. I design hybrid mobile platforms, background
+    processing pipelines, and hardware‑integrated solutions including BLE automation.
+  </p>
+  <p style="margin-top:10px">
+    I have led architecture and development for workforce automation platforms,
+    CRM ecosystems, academic discovery systems, and government‑scale POS deployments
+    across statewide infrastructure.
+  </p>
+</section>
 
-            <div class="card">
-                <h3>Senior Mobile Application Engineer — Libsys Limited</h3>
-                <p class="date">2022 – Present</p>
-                <ul>
-                    <li>Designed and developed enterprise-grade mobile applications.</li>
-                    <li>Led architecture planning and development for Bluetooth-based systems.</li>
-                    <li>Implemented background processing using WorkManager and Foreground Services.</li>
-                    <li>Mentored developers and improved code quality standards.</li>
-                </ul>
-            </div>
+<!-- CORE EXPERTISE -->
+<section class="container section">
+  <div class="section-title">Core Expertise</div>
 
-        </div>
-    </section>
+  <div class="grid">
+    <div class="card">
+      <h3>Mobile Architecture</h3>
+      <p>Clean Architecture, MVVM, MVI, scalable system design, multi‑module apps, hybrid Android + React Native platforms.</p>
+    </div>
 
-    <!-- PROJECTS -->
-    <section class="section light">
-        <div class="container">
-            <h2>Key Projects</h2>
+    <div class="card">
+      <h3>BLE & Hardware Integration</h3>
+      <p>BLE scanning, beacons, RFID, printers, weighing scales, device policies, continuous monitoring systems.</p>
+    </div>
 
-            <div class="card">
-                <h3>SymphonyX — Smart Attendance System</h3>
-                <ul>
-                    <li>Bluetooth-based automated attendance tracking system.</li>
-                    <li>Hybrid React Native + Native Android architecture.</li>
-                    <li>Background BLE scanning even when device is locked.</li>
-                    <li>Improved detection reliability and performance.</li>
-                </ul>
-            </div>
+    <div class="card">
+      <h3>Background Systems</h3>
+      <p>WorkManager, AlarmManager, Headless JS, Foreground Services, battery optimization, always‑on pipelines.</p>
+    </div>
+  </div>
+</section>
 
-            <div class="card">
-                <h3>TargetX CRM</h3>
-                <ul>
-                    <li>Enterprise CRM mobile solution.</li>
-                    <li>Real-time data sync and analytics dashboards.</li>
-                    <li>Optimized API handling and UI performance.</li>
-                </ul>
-            </div>
+<!-- PROJECTS -->
+<section class="container section">
+  <div class="section-title">Key Projects</div>
 
-        </div>
-    </section>
+  <div class="project">
+    <h3>SymphonyX</h3>
+    <p>Bluetooth attendance and workforce automation platform with continuous BLE monitoring.</p>
+    <ul>
+      <li>Hybrid React Native + Native Android architecture</li>
+      <li>BLE proximity attendance system</li>
+      <li>Full background execution pipeline</li>
+      <li>Firebase Crashlytics and FCM</li>
+      <li>CI/CD using Fastlane and GitHub Actions</li>
+    </ul>
+  </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Abhishek Giri | Senior Mobile Application Engineer</p>
-    </footer>
+  <div class="project">
+    <h3>TargetX CRM</h3>
+    <p>Enterprise mobile CRM for admissions and lead lifecycle management.</p>
+    <ul>
+      <li>Scalable architecture and MVVM implementation</li>
+      <li>Secure local storage and authentication</li>
+      <li>Push notifications via OneSignal</li>
+      <li>Crash monitoring and CI/CD automation</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>LSDiscovery</h3>
+    <p>Academic search and retrieval platform handling large‑scale datasets.</p>
+    <ul>
+      <li>High‑performance search modules</li>
+      <li>Optimized API communication</li>
+      <li>Performance and responsiveness improvements</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3>Government POS System</h3>
+    <p>Android POS deployed across statewide agricultural markets.</p>
+    <ul>
+      <li>Bluetooth weighing scale integration</li>
+      <li>Thermal printer support</li>
+      <li>Offline‑first architecture</li>
+      <li>Secure encrypted transactions</li>
+    </ul>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section class="container section">
+  <div class="section-title">Leadership Impact</div>
+  <ul class="clean">
+    <li>Led architecture for multiple enterprise mobile platforms</li>
+    <li>Managed and mentored a team of 4 developers</li>
+    <li>Improved BLE scan efficiency by 40%</li>
+    <li>Reduced crash rate by 30% using Crashlytics insights</li>
+    <li>Delivered statewide government mobility solutions</li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<footer class="footer">
+  <h2>Let’s Work Together</h2>
+  <p>Open to technical leadership roles, architecture consulting, and mobile platform development opportunities.</p>
+  <p><strong>Email:</strong> giriabhishek071995@gmail.com</p>
+</footer>
 
 </body>
 </html>
