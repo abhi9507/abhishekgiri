@@ -1,225 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abhishek Giri | Senior Mobile Application Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Giri | Mobile Application Engineer</title>
 
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f9fafb;
-      color: #1f2937;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 32px 20px;
-      background: #ffffff;
-    }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 4px;
-    }
+h1, h2, h3 {
+  margin: 0;
+}
 
-    h2 {
-      font-size: 20px;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 6px;
-      margin-top: 36px;
-    }
+h2 {
+  margin-bottom: 20px;
+}
 
-    h3 {
-      font-size: 16px;
-      margin-bottom: 4px;
-    }
+.hero {
+  text-align: center;
+}
 
-    p {
-      margin: 6px 0 12px;
-    }
+.hero h1 {
+  font-size: 40px;
+}
 
-    ul {
-      margin: 6px 0 12px 18px;
-    }
+.subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 8px;
+}
 
-    li {
-      margin-bottom: 6px;
-    }
+.description {
+  margin-top: 16px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #475569;
+}
 
-    .header {
-      text-align: center;
-      margin-bottom: 24px;
-    }
+.btn-group {
+  margin-top: 24px;
+}
 
-    .subtitle {
-      font-size: 16px;
-      font-weight: 600;
-    }
+.btn {
+  border: 1px solid #cbd5f5;
+  padding: 10px 18px;
+  margin: 5px;
+  text-decoration: none;
+  color: #1e293b;
+  border-radius: 6px;
+  display: inline-block;
+}
 
-    .links a {
-      color: #2563eb;
-      text-decoration: none;
-      margin: 0 6px;
-      font-size: 14px;
-    }
+.section {
+  background: white;
+  margin-top: 40px;
+}
 
-    .section-block {
-      margin-top: 18px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
 
-    .company {
-      font-weight: bold;
-    }
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
 
-    .role {
-      font-style: italic;
-      font-size: 14px;
-    }
+.project {
+  margin-bottom: 20px;
+}
 
-    .date {
-      float: right;
-      font-size: 13px;
-      color: #6b7280;
-    }
+.project ul {
+  margin-top: 8px;
+}
 
-    .clearfix::after {
-      content: "";
-      display: block;
-      clear: both;
-    }
+.footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
 
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 13px;
-      color: #6b7280;
-    }
-  </style>
+.footer p {
+  color: #cbd5e1;
+}
+</style>
 </head>
 
 <body>
+
+<div class="container hero">
+  <h1>Abhishek Giri</h1>
+  <div class="subtitle">Senior Mobile Application Engineer | Technical Lead</div>
+
+  <p class="description">
+    6+ years of experience designing scalable, secure, and high-performance mobile
+    platforms using Android (Kotlin, Java) and React Native. Specialized in mobile
+    architecture, background execution systems, BLE integrations, and enterprise
+    mobility solutions.
+  </p>
+
+  <div class="btn-group">
+    <a class="btn" href="mailto:giriabhishek071995@gmail.com">Contact</a>
+    <a class="btn" href="https://www.linkedin.com/in/abhishekgiri07" target="_blank">LinkedIn</a>
+    <a class="btn" href="https://abhi9507.github.io/abhishekgiri/" target="_blank">Portfolio</a>
+  </div>
+</div>
+
+<div class="section">
   <div class="container">
-
-    <!-- HEADER -->
-    <div class="header">
-      <h1>Abhishek Giri</h1>
-      <div class="subtitle">Senior Mobile Application Engineer (Android | React Native)</div>
-      <p>Delhi NCR, India</p>
-      <div class="links">
-        <a href="mailto:giriabhishek071995@gmail.com">Email</a> |
-        <a href="https://www.linkedin.com/in/abhishekgiri07" target="_blank">LinkedIn</a> |
-        <a href="https://abhi9507.github.io/abhishekgiri.portfolio/" target="_blank">Portfolio</a>
-      </div>
-    </div>
-
-    <!-- SUMMARY -->
-    <h2>Professional Summary</h2>
+    <h2>About Me</h2>
     <p>
-      Senior Mobile Application Engineer with 6+ years of experience in Native Android (Kotlin, Java)
-      and React Native hybrid development. Proven expertise in building high-performance, scalable,
-      and secure mobile applications across enterprise and government domains including ERP, CRM,
-      POS, and automation platforms.
+      I am a Technical Lead specializing in Android and React Native architecture for
+      enterprise-scale mobile systems. I design hybrid mobile platforms, background
+      processing pipelines, and hardware-integrated solutions including BLE-based
+      automation systems.
     </p>
+    <p>
+      I have led architecture and development for large-scale platforms including workforce
+      automation systems, CRM platforms, academic search applications, and government POS
+      deployments across statewide infrastructure.
+    </p>
+  </div>
+</div>
 
-    <!-- SKILLS -->
-    <h2>Core Technical Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Kotlin, Java, JavaScript, TypeScript</li>
-      <li><strong>Android:</strong> Android SDK, Jetpack Compose, MVVM, MVI, Clean Architecture</li>
-      <li><strong>Background Processing:</strong> WorkManager, Headless JS, Foreground Services</li>
-      <li><strong>React Native:</strong> Native Modules, Redux, Performance Optimization</li>
-      <li><strong>Security:</strong> OWASP MASVS, VAPT, SSL Pinning, Secure Storage</li>
-      <li><strong>Tools:</strong> Android Studio, Git, Gradle, Firebase, Play Console, MobSF</li>
-    </ul>
-
-    <!-- EXPERIENCE -->
-    <h2>Professional Experience</h2>
-
-    <div class="section-block">
-      <div class="clearfix">
-        <span class="company">Libsys Ltd</span>
-        <span class="date">Aug 2022 – Present</span>
-      </div>
-      <div class="role">Senior Mobile Engineer</div>
-      <ul>
-        <li>Architected and developed enterprise-scale Android and React Native applications.</li>
-        <li>Designed Android–React Native native modules for BLE, telephony, and background execution.</li>
-        <li>Implemented Headless JS and WorkManager for reliable background processing.</li>
-        <li>Led VAPT remediation and mobile security hardening.</li>
-      </ul>
+<div class="container">
+  <h2>Core Expertise</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Mobile Architecture</h3>
+      <p>Clean Architecture, MVVM, MVI, scalable system design, multi-module apps, hybrid Android + React Native platforms.</p>
     </div>
 
-    <div class="section-block">
-      <div class="clearfix">
-        <span class="company">CMS Computers Ltd (NIC Project)</span>
-        <span class="date">Oct 2020 – Jul 2022</span>
-      </div>
-      <div class="role">Mobile Application Developer</div>
-      <ul>
-        <li>Developed Android POS applications for UP State government mandis.</li>
-        <li>Integrated Bluetooth weighing scales and thermal printers.</li>
-      </ul>
+    <div class="card">
+      <h3>BLE & Hardware Integration</h3>
+      <p>BLE scanning, beacons, RFID, printers, weighing scales, device policies, continuous background monitoring.</p>
     </div>
 
-    <div class="section-block">
-      <div class="clearfix">
-        <span class="company">SISL Infotech Pvt Ltd (NIC Project)</span>
-        <span class="date">Aug 2019 – Sep 2020</span>
-      </div>
-      <div class="role">Android Developer</div>
-      <ul>
-        <li>Built offline-first Android apps using Room and SQLite.</li>
-        <li>Migrated legacy Java codebases to Kotlin.</li>
-      </ul>
+    <div class="card">
+      <h3>Background Systems</h3>
+      <p>WorkManager, AlarmManager, Headless JS, Foreground Services, battery optimization and always-on execution pipelines.</p>
     </div>
+  </div>
+</div>
 
-    <!-- PROJECTS -->
+<div class="section">
+  <div class="container">
     <h2>Key Projects</h2>
 
-    <ul>
-      <li>
-        <strong>SymphonyX – Bluetooth Attendance & Workforce Automation</strong><br/>
-        Played a key role in application architecture and developed critical components using
-        React Native + Android native modules, Headless JS, and BLE scanning.
-      </li>
+    <div class="project">
+      <h3>SymphonyX</h3>
+      <p>Bluetooth attendance and workforce automation platform with continuous BLE monitoring and hybrid mobile architecture.</p>
+      <ul>
+        <li>Designed hybrid React Native + Native Android architecture</li>
+        <li>Built BLE proximity attendance system</li>
+        <li>Implemented full background execution pipeline</li>
+        <li>Integrated Firebase Crashlytics and FCM</li>
+        <li>CI/CD using Fastlane and GitHub Actions</li>
+      </ul>
+    </div>
 
-      <li>
-        <strong>TargetX CRM – Admissions & Lead Management Platform</strong><br/>
-        Led architecture and development of core CRM features including lead workflows,
-        dashboards, and REST API integrations.
-      </li>
+    <div class="project">
+      <h3>TargetX CRM</h3>
+      <p>Mobile CRM platform for admissions and lead lifecycle management.</p>
+      <ul>
+        <li>Architected scalable mobile CRM system</li>
+        <li>MVVM and repository pattern implementation</li>
+        <li>Secure local storage and authentication</li>
+        <li>Push notifications using OneSignal</li>
+        <li>Crash monitoring and CI/CD automation</li>
+      </ul>
+    </div>
 
-      <li>
-        <strong>LSDiscovery – Academic Search Platform</strong><br/>
-        Contributed to Android architecture and key modules for scalable academic resource discovery.
-      </li>
+    <div class="project">
+      <h3>LSDiscovery</h3>
+      <p>Academic search and retrieval platform handling large-scale datasets.</p>
+      <ul>
+        <li>Designed scalable architecture</li>
+        <li>High performance search modules</li>
+        <li>Optimized API communication</li>
+        <li>Improved performance and responsiveness</li>
+      </ul>
+    </div>
 
-      <li>
-        <strong>Government POS & Market Management System (NIC)</strong><br/>
-        Developed secure Android POS apps with offline-first transaction workflows.
-      </li>
-    </ul>
-
-    <!-- EDUCATION -->
-    <h2>Education</h2>
-    <p>
-      <strong>Master of Computer Applications (MCA)</strong><br/>
-      Babasaheb Bhimrao Ambedkar University (2016 – 2019)
-    </p>
-    <p>
-      <strong>Bachelor of Computer Applications (BCA)</strong><br/>
-      University of Lucknow (2013 – 2016)
-    </p>
-
-    <footer>
-      © 2026 Abhishek Giri · Senior Mobile Application Engineer
-    </footer>
-
+    <div class="project">
+      <h3>Government POS System</h3>
+      <p>Android POS applications deployed across statewide agricultural markets.</p>
+      <ul>
+        <li>Bluetooth weighing scale integration</li>
+        <li>Thermal printer support</li>
+        <li>Offline-first architecture</li>
+        <li>Secure encrypted transactions</li>
+      </ul>
+    </div>
   </div>
+</div>
+
+<div class="container">
+  <h2>Leadership Impact</h2>
+  <ul>
+    <li>Led architecture for multiple enterprise mobile platforms</li>
+    <li>Managed team of 4 developers</li>
+    <li>Improved BLE scan efficiency by 40%</li>
+    <li>Reduced crash rate by 30% using Crashlytics insights</li>
+    <li>Delivered statewide government mobility solutions</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <h2>Let’s Work Together</h2>
+  <p>Open to technical leadership roles, architecture consulting, and mobile platform development opportunities.</p>
+  <p>giriabhishek071995@gmail.com</p>
+</div>
+
 </body>
 </html>
